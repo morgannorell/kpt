@@ -48,6 +48,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Npgsql, Version=3.1.8.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.3.1.8\lib\net451\Npgsql.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="kpt.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,11 +80,60 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="courselogin.aspx" />
+    <Content Include="coursestart.aspx" />
+    <Content Include="css\main.css" />
+    <Content Include="css\responsiv.css" />
+    <Content Include="css\start.css" />
+    <Content Include="css\style.css" />
+    <Content Include="default.aspx" />
+    <Content Include="images\arrow.png" />
+    <Content Include="images\circle.png" />
+    <Content Include="images\glas.png" />
+    <Content Include="images\home.png" />
+    <Content Include="images\leaf.png" />
+    <Content Include="images\support.png" />
+    <Content Include="js\menu.js" />
     <Content Include="Web.config" />
+    <Content Include="xml\question.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Coursetest.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="classes\Person.cs" />
+    <Compile Include="classes\Sql.cs" />
+    <Compile Include="courselogin.aspx.cs">
+      <DependentUpon>courselogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="courselogin.aspx.designer.cs">
+      <DependentUpon>courselogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coursestart.aspx.cs">
+      <DependentUpon>coursestart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="coursestart.aspx.designer.cs">
+      <DependentUpon>coursestart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.master.cs">
+      <DependentUpon>kpt.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kpt.master.designer.cs">
+      <DependentUpon>kpt.master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

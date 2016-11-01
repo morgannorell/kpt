@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test>  
+  <question>
+    <qid></qid>
+    <qtext></qtext>
+    <category></category>
+    <img></img>
+    <answers>
+      <one>
+        <aid></aid>
+		    <text></text>
+		    <correct></correct>
+		    <answered></answered>
+	    </one>
+      <two>
+        <aid></aid>
+		    <text></text>
+		    <correct></correct>
+		    <answered></answered>
+	    </two>
+      <three>
+        <aid></aid>
+		    <text></text>
+		    <correct></correct>
+		    <answered></answered>
+	    </three>
+      <four>
+        <aid></aid>
+		    <text></text>
+		    <correct></correct>
+		    <answered></answered>
+	    </four>
+    </answers>
+  </question>
+</test>
